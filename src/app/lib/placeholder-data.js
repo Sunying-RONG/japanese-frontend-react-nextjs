@@ -277,3 +277,131 @@ export const monographs = [
     }
 ]
 
+export const digraphs =[
+    {
+        id: 0,
+        pronounce: 'kya',
+        hiragana: 'きゃ',
+        katakana: 'キャ'
+    },
+    {
+        id: 1,
+        pronounce: 'kyu',
+        hiragana: 'きゅ',
+        katakana: 'キュ'
+    },
+    {
+        id: 2,
+        pronounce: 'kyo',
+        hiragana: 'きょ',
+        katakana: 'キョ'
+    },
+    {
+        id: 3,
+        pronounce: 'sha',
+        hiragana: 'しゃ',
+        katakana: 'シャ'
+    },
+    {
+        id: 4,
+        pronounce: 'shu',
+        hiragana: 'しゅ',
+        katakana: 'シュ'
+    },
+    {
+        id: 5,
+        pronounce: 'sho',
+        hiragana: 'しょ',
+        katakana: 'ショ'
+    },
+    {
+        id: 6,
+        pronounce: 'cha',
+        hiragana: 'ちゃ',
+        katakana: 'チャ'
+    },
+    {
+        id: 7,
+        pronounce: 'chu',
+        hiragana: 'ちゅ',
+        katakana: 'チュ'
+    },
+    {
+        id: 8,
+        pronounce: 'cho',
+        hiragana: 'ちょ',
+        katakana: 'チョ'
+    },
+    {
+        id: 9,
+        pronounce: 'nya',
+        hiragana: 'にゃ',
+        katakana: 'ニャ'
+    },
+    {
+        id: 10,
+        pronounce: 'nyu',
+        hiragana: 'にゅ',
+        katakana: 'ニュ'
+    },
+    {
+        id: 11,
+        pronounce: 'nyo',
+        hiragana: 'にょ',
+        katakana: 'ニョ'
+    },
+    {
+        id: 12,
+        pronounce: 'hya',
+        hiragana: 'ひゃ',
+        katakana: 'ヒャ'
+    },
+    {
+        id: 13,
+        pronounce: 'hyu',
+        hiragana: 'ひゅ',
+        katakana: 'ヒュ'
+    },
+    {
+        id: 14,
+        pronounce: 'hyo',
+        hiragana: 'ひょ',
+        katakana: 'ヒョ'
+    },
+    {
+        id: 15,
+        pronounce: 'mya',
+        hiragana: 'みゃ',
+        katakana: 'ミャ'
+    },
+    {
+        id: 16,
+        pronounce: 'myu',
+        hiragana: 'みゅ',
+        katakana: 'ミュ'
+    },
+    {
+        id: 17,
+        pronounce: 'myo',
+        hiragana: 'みょ',
+        katakana: 'ミョ'
+    },
+    {
+        id: 18,
+        pronounce: 'rya',
+        hiragana: 'りゃ',
+        katakana: 'リャ'
+    },
+    {
+        id: 19,
+        pronounce: 'ryu',
+        hiragana: 'りゅ',
+        katakana: 'リュ'
+    },
+    {
+        id: 20,
+        pronounce: 'ryo',
+        hiragana: 'りょ',
+        katakana: 'リョ'
+    }
+]
