@@ -13,7 +13,7 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const syllabary = [
-  { name: 'All', description: 'All Japanese syllabary', href: '/dashboard', icon: ChartPieIcon },
+  { name: 'Monographs (gojūon)', description: '"Fifty sounds" is a traditional system ordering kana characters by their component phonemes, roughly analogous to alphabetical order.', href: '/dashboard', icon: ChartPieIcon },
   { name: 'あ　Hiragana', description: 'Cursive Japanese syllabary used primarily for native Japanese words', href: '/dashboard/hiragana', icon: CursorArrowRaysIcon },
   { name: 'ア　Katakana', description: 'Angular Japanese syllabary used primarily for loanwords', href: '/dashboard/katakana', icon: FingerPrintIcon },
   { name: 'Exercise', description: 'Try to remember syllabary', href: '#', icon: SquaresPlusIcon },
