@@ -1,4 +1,4 @@
-const Monographs = [
+export const monographs = [
     {
         pronounce: 'a',
         hiragana: 'あ',
