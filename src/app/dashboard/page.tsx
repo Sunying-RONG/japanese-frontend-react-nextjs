@@ -49,7 +49,7 @@ export default function Page() {
                 </button>
             </div>
             <h1 className='text-center text-3xl'>Monographs (gojūon)</h1>
-            <div className='grid gap-2 lg:gap-8 grid-cols-5 content-around mx-2 my-10 lg:mx-60'>
+            <div className='w-fit grid gap-2 lg:gap-8 grid-cols-5 content-around mx-auto my-10'>
                 {monographsWithPlaceholder.map(item => {
                     if (item.pronounce) {
                         return <div
@@ -70,7 +70,7 @@ export default function Page() {
                 })}
             </div>
             <h1 className='text-center text-3xl'>Digraphs (yōon)</h1>
-            <div className='grid gap-2 lg:gap-8 grid-cols-3 content-around mx-2 my-10 lg:mx-60'>
+            <div className='w-fit grid gap-2 lg:gap-8 grid-cols-3 content-around mx-auto my-10'>
                 {digraphs.map(item => {
                     return <div
                         key={item.id}
