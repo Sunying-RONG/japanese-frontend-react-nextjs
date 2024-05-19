@@ -1,6 +1,8 @@
 "use client"
-import { createContext, useContext, useState } from 'react';
 import { monographs, digraphs } from '@/app/lib/placeholder-data';
+import SelectButtons from '../ui/select-buttons';
+import { KanaSelectContext, KanaSelectContextType } from '../context/kana-select-context';
+import { useContext } from 'react';
 
 const monographsWithPlaceholder = monographs;
 for (let index = 0; index < monographsWithPlaceholder.length; index++) {
@@ -17,37 +19,10 @@ for (let index = 0; index < monographsWithPlaceholder.length; index++) {
 }
 
 export default function Page() {
-    const [showOrHide, setShowOrHide] = useState({h:true, k:true, p:true});
-    function toggle(event: any) {
-        const name: keyof typeof showOrHide = event.target.name;
-        setShowOrHide(prev => ({
-            ...prev,
-            [name]: !prev[name]
-        }))
-    }
-
+    const { showOrHide } = useContext(KanaSelectContext) as KanaSelectContextType;
     return(
         <div>
-            <div className='flex flex-row justify-center space-x-8 my-10'>
-                <button 
-                    className={`w-24 h-12 rounded-2xl ${showOrHide.h ? 'bg-rose-400' : 'bg-rose-100 line-through'}`}
-                    name='h'
-                    onClick={toggle}>
-                    Hiragana
-                </button>
-                <button 
-                    className={`w-24 h-12 rounded-2xl ${showOrHide.k ? 'bg-sky-400' : 'bg-sky-100 line-through'}`}
-                    name='k'
-                    onClick={toggle}> 
-                    Katakana 
-                </button>
-                <button 
-                    className={`w-24 h-12 rounded-2xl ${showOrHide.p ? 'bg-purple-400' : 'bg-purple-100 line-through'}`}
-                    name='p'
-                    onClick={toggle}> 
-                    Pronounce 
-                </button>
-            </div>
+            <SelectButtons />
             <h1 className='text-center text-3xl'>Monographs (gojūon)</h1>
             <div className='w-fit grid gap-2 lg:gap-8 grid-cols-5 content-around mx-auto my-10'>
                 {monographsWithPlaceholder.map(item => {
@@ -57,10 +32,10 @@ export default function Page() {
                             className='mx-auto flex flex-col'
                         >
                             <div className='flex flex-row'>
-                                <div className={`${showOrHide.h ? 'block' : 'hidden'} mx-auto bg-rose-200 hover:bg-rose-300 text-base md:text-3xl p-2`}>{item.hiragana}</div>
-                                <div className={`${showOrHide.k ? 'block' : 'hidden'} mx-auto bg-sky-200 hover:bg-sky-300 text-base md:text-3xl p-2`}>{item.katakana}</div>
+                                <div className={`${showOrHide!.h ? 'block' : 'hidden'} mx-auto bg-rose-200 hover:bg-rose-300 text-base md:text-3xl p-2`}>{item.hiragana}</div>
+                                <div className={`${showOrHide!.k ? 'block' : 'hidden'} mx-auto bg-sky-200 hover:bg-sky-300 text-base md:text-3xl p-2`}>{item.katakana}</div>
                             </div>
-                            <div className={`${showOrHide.p ? 'block' : 'hidden'} w-full bg-purple-100 text-sm md:text-xl p-1`}>
+                            <div className={`${showOrHide!.p ? 'block' : 'hidden'} w-full bg-purple-100 text-sm md:text-xl p-1`}>
                                 <p className='text-center'>{item.pronounce}</p>
                             </div>
                         </div>
@@ -77,35 +52,16 @@ export default function Page() {
                         className='mx-auto flex flex-col'
                     >
                         <div className='flex flex-row'>
-                            <div className={`${showOrHide.h ? 'block' : 'hidden'} mx-auto bg-rose-200 hover:bg-rose-300 text-base md:text-3xl p-2`}>{item.hiragana}</div>
-                            <div className={`${showOrHide.k ? 'block' : 'hidden'} mx-auto bg-sky-200 hover:bg-sky-300 text-base md:text-3xl p-2`}>{item.katakana}</div>
+                            <div className={`${showOrHide!.h ? 'block' : 'hidden'} mx-auto bg-rose-200 hover:bg-rose-300 text-base md:text-3xl p-2`}>{item.hiragana}</div>
+                            <div className={`${showOrHide!.k ? 'block' : 'hidden'} mx-auto bg-sky-200 hover:bg-sky-300 text-base md:text-3xl p-2`}>{item.katakana}</div>
                         </div>
-                        <div className={`${showOrHide.p ? 'block' : 'hidden'} w-full bg-purple-100 text-sm md:text-xl p-1`}>
+                        <div className={`${showOrHide!.p ? 'block' : 'hidden'} w-full bg-purple-100 text-sm md:text-xl p-1`}>
                             <p className='text-center'>{item.pronounce}</p>
                         </div>
                     </div>
                 })}
             </div>
-            <div className='flex flex-row justify-center space-x-8 my-10'>
-                <button 
-                    className={`w-24 h-12 rounded-2xl ${showOrHide.h ? 'bg-rose-400' : 'bg-rose-100 line-through'}`}
-                    name='h'
-                    onClick={toggle}>
-                    Hiragana
-                </button>
-                <button 
-                    className={`w-24 h-12 rounded-2xl ${showOrHide.k ? 'bg-sky-400' : 'bg-sky-100 line-through'}`}
-                    name='k'
-                    onClick={toggle}> 
-                    Katakana 
-                </button>
-                <button 
-                    className={`w-24 h-12 rounded-2xl ${showOrHide.p ? 'bg-purple-400' : 'bg-purple-100 line-through'}`}
-                    name='p'
-                    onClick={toggle}> 
-                    Pronounce 
-                </button>
-            </div>
+            <SelectButtons />
         </div>
     ); 
 }
