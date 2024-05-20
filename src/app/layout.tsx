@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { KanaSelectProvider } from "./context/kana-select-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <KanaSelectProvider>
-        <body className={inter.className}>{children}</body>
-      </KanaSelectProvider>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

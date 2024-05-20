@@ -1,3 +1,4 @@
+"use client"
 import { useContext } from "react";
 import { KanaSelectContext, KanaSelectContextType } from "../context/kana-select-context";
 

@@ -1,7 +1,7 @@
 export default function Page() {
     return(
         <div>
-            <p >Katakana Page</p>
+            <p >Digraphs with diacritics Page</p>
         </div>
         
     ); 

@@ -13,11 +13,11 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const syllabary = [
-  { name: 'Monographs (gojūon)', description: '"Fifty sounds" is a traditional system ordering kana characters by their component phonemes, roughly analogous to alphabetical order.', href: '/dashboard', icon: ChartPieIcon },
-  { name: 'あ　Hiragana', description: 'Cursive Japanese syllabary used primarily for native Japanese words', href: '/dashboard/hiragana', icon: CursorArrowRaysIcon },
-  { name: 'ア　Katakana', description: 'Angular Japanese syllabary used primarily for loanwords', href: '/dashboard/katakana', icon: FingerPrintIcon },
-  { name: 'Exercise', description: 'Try to remember syllabary', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Monographs (gojūon)', description: '"Fifty sounds" is a traditional system ordering kana characters by their component phonemes, roughly analogous to alphabetical order.', href: '/syllabary', icon: ChartPieIcon },
+  { name: 'Diacritics (gojūon with dakuten)', description: 'Cursive Japanese syllabary used primarily for native Japanese words', href: '/syllabary/diacritics', icon: CursorArrowRaysIcon },
+  { name: 'Digraphs (yōon)', description: 'Angular Japanese syllabary used primarily for loanwords', href: '/syllabary/digraphs', icon: FingerPrintIcon },
+  { name: 'Digraphs with diacritics (yōon with dakuten)', description: 'Try to remember syllabary', href: '/syllabary/digraphs-diacritics', icon: SquaresPlusIcon },
+  { name: 'Exercise', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
