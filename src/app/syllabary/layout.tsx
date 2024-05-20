@@ -1,5 +1,5 @@
  import NavBar from '@/app/ui/nav-bar';
-import SelectButtons from '../ui/select-buttons';
+import SelectButtons from '../ui/syllabary/select-buttons';
 import { KanaSelectProvider } from '../context/kana-select-context';
 
 export default function Layout({ children }: { children: React.ReactNode }) {

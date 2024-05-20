@@ -277,7 +277,162 @@ export const monographs = [
     }
 ]
 
-export const digraphs =[
+export const diacritics = [
+    {
+        id: 0,
+        pronounce: 'ga',
+        hiragana: 'が',
+        katakana: 'ガ'
+    },
+    {
+        id: 1,
+        pronounce: 'gi',
+        hiragana: 'ぎ',
+        katakana: 'ギ'
+    },
+    {
+        id: 2,
+        pronounce: 'gu',
+        hiragana: 'ぐ',
+        katakana: 'グ'
+    },
+    {
+        id: 3,
+        pronounce: 'ge',
+        hiragana: 'げ',
+        katakana: 'ゲ'
+    },
+    {
+        id: 4,
+        pronounce: 'go',
+        hiragana: 'ご',
+        katakana: 'ゴ'
+    },
+    {
+        id: 5,
+        pronounce: 'za',
+        hiragana: 'ざ',
+        katakana: 'ザ'
+    },
+    {
+        id: 6,
+        pronounce: 'ji',
+        hiragana: 'じ',
+        katakana: 'ジ'
+    },
+    {
+        id: 7,
+        pronounce: 'zu',
+        hiragana: 'ず',
+        katakana: 'ズ'
+    },
+    {
+        id: 8,
+        pronounce: 'ze',
+        hiragana: 'ぜ',
+        katakana: 'ゼ'
+    },
+    {
+        id: 9,
+        pronounce: 'zo',
+        hiragana: 'ぞ',
+        katakana: 'ゾ'
+    },
+    {
+        id: 10,
+        pronounce: 'da',
+        hiragana: 'だ',
+        katakana: 'ダ'
+    },
+    {
+        id: 11,
+        pronounce: 'ji',
+        hiragana: 'ぢ',
+        katakana: 'ヂ'
+        // input: 'di'
+    },
+    {
+        id: 12,
+        pronounce: 'zu',
+        hiragana: 'づ',
+        katakana: 'ヅ'
+        // input: 'du'
+    },
+    {
+        id: 13,
+        pronounce: 'de',
+        hiragana: 'で',
+        katakana: 'デ'
+    },
+    {
+        id: 14,
+        pronounce: 'do',
+        hiragana: 'ど',
+        katakana: 'ド'
+    },
+    {
+        id: 15,
+        pronounce: 'ba',
+        hiragana: 'ば',
+        katakana: 'バ'
+    },
+    {
+        id: 16,
+        pronounce: 'bi',
+        hiragana: 'び',
+        katakana: 'ビ'
+    },
+    {
+        id: 17,
+        pronounce: 'bu',
+        hiragana: 'ぶ',
+        katakana: 'ブ'
+    },
+    {
+        id: 18,
+        pronounce: 'be',
+        hiragana: 'べ',
+        katakana: 'ベ'
+    },
+    {
+        id: 19,
+        pronounce: 'bo',
+        hiragana: 'ぼ',
+        katakana: 'ボ'
+    },
+    {
+        id: 20,
+        pronounce: 'pa',
+        hiragana: 'ぱ',
+        katakana: 'パ'
+    },
+    {
+        id: 21,
+        pronounce: 'pi',
+        hiragana: 'ぴ',
+        katakana: 'ピ'
+    },
+    {
+        id: 22,
+        pronounce: 'pu',
+        hiragana: 'ぷ',
+        katakana: 'プ'
+    },
+    {
+        id: 23,
+        pronounce: 'pe',
+        hiragana: 'ぺ',
+        katakana: 'ペ'
+    },
+    {
+        id: 24,
+        pronounce: 'po',
+        hiragana: 'ぽ',
+        katakana: 'ポ'
+    }
+]
+
+export const digraphs = [
     {
         id: 0,
         pronounce: 'kya',
@@ -403,5 +558,80 @@ export const digraphs =[
         pronounce: 'ryo',
         hiragana: 'りょ',
         katakana: 'リョ'
+    }
+]
+
+export const digraphsDiacritics = [
+    {
+        id: 0,
+        pronounce: 'gya',
+        hiragana: 'ぎゃ',
+        katakana: 'ギャ'
+    },
+    {
+        id: 1,
+        pronounce: 'gyu',
+        hiragana: 'ぎゅ',
+        katakana: 'ギュ'
+    },
+    {
+        id: 2,
+        pronounce: 'gyo',
+        hiragana: 'ぎょ',
+        katakana: 'ギョ'
+    },
+    {
+        id: 3,
+        pronounce: 'ja',
+        hiragana: 'じゃ',
+        katakana: 'ジャ'
+    },
+    {
+        id: 4,
+        pronounce: 'ju',
+        hiragana: 'じゅ',
+        katakana: 'ジュ'
+    },
+    {
+        id: 5,
+        pronounce: 'jo',
+        hiragana: 'じょ',
+        katakana: 'ジョ'
+    },
+    {
+        id: 6,
+        pronounce: 'bya',
+        hiragana: 'びゃ',
+        katakana: 'ビャ'
+    },
+    {
+        id: 7,
+        pronounce: 'byu',
+        hiragana: 'びゅ',
+        katakana: 'ビュ'
+    },
+    {
+        id: 8,
+        pronounce: 'byo',
+        hiragana: 'びょ',
+        katakana: 'ビョ'
+    },
+    {
+        id: 9,
+        pronounce: 'pya',
+        hiragana: 'ぴゃ',
+        katakana: 'ピャ'
+    },
+    {
+        id: 10,
+        pronounce: 'pyu',
+        hiragana: 'ぴゅ',
+        katakana: 'ピュ'
+    },
+    {
+        id: 11,
+        pronounce: 'pyo',
+        hiragana: 'ぴょ',
+        katakana: 'ピョ'
     }
 ]

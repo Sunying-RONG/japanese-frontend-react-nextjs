@@ -13,11 +13,11 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const syllabary = [
-  { name: 'Monographs (gojūon)', description: '"Fifty sounds" is a traditional system ordering kana characters by their component phonemes, roughly analogous to alphabetical order.', href: '/syllabary', icon: ChartPieIcon },
-  { name: 'Diacritics (gojūon with dakuten)', description: 'Cursive Japanese syllabary used primarily for native Japanese words', href: '/syllabary/diacritics', icon: CursorArrowRaysIcon },
-  { name: 'Digraphs (yōon)', description: 'Angular Japanese syllabary used primarily for loanwords', href: '/syllabary/digraphs', icon: FingerPrintIcon },
-  { name: 'Digraphs with diacritics (yōon with dakuten)', description: 'Try to remember syllabary', href: '/syllabary/digraphs-diacritics', icon: SquaresPlusIcon },
-  { name: 'Exercise', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Monographs (gojūon)', description: 'か|カ　"Fifty sounds" is a traditional system ordering kana (hiragana and katakana) characters by their component phonemes.', href: '/syllabary', icon: ChartPieIcon },
+  { name: 'Diacritics (gojūon with dakuten)', description: 'が|ガ　Versions of kana with a dakuten.', href: '/syllabary/diacritics', icon: CursorArrowRaysIcon },
+  { name: 'Digraphs (yōon)', description: 'きゃ|キャ　Yōon is a feature of the Japanese language in which a mora is formed with an added sound.', href: '/syllabary/digraphs', icon: FingerPrintIcon },
+  { name: 'Digraphs with diacritics (yōon with dakuten)', description: 'ぎゃ|ギャ　Versions of yōon with a dakuten.', href: '/syllabary/digraphs-diacritics', icon: SquaresPlusIcon },
+  { name: 'Exercise', description: 'Try to recall every character with it\'s pronunciation', href: '#', icon: ArrowPathIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },

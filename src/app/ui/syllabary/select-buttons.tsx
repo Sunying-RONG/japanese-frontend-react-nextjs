@@ -1,6 +1,6 @@
 "use client"
 import { useContext } from "react";
-import { KanaSelectContext, KanaSelectContextType } from "../context/kana-select-context";
+import { KanaSelectContext, KanaSelectContextType } from "../../context/kana-select-context";
 
 export default function SelectButtons() {
     const { showOrHide, updateSelect } = useContext(KanaSelectContext) as KanaSelectContextType;

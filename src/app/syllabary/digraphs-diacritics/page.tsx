@@ -1,8 +1,12 @@
+import { digraphsDiacritics } from '@/app/data/placeholder-data';
+import KanaGrid from '@/app/ui/syllabary/kana-grid';
+
 export default function Page() {
     return(
-        <div>
-            <p >Digraphs with diacritics Page</p>
-        </div>
-        
+        <KanaGrid 
+            title='Digraphs with diacritics (yōon with dakuten)' 
+            kanaData={digraphsDiacritics}
+            columnNb={3}
+        />
     ); 
 }
