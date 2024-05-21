@@ -1,11 +1,9 @@
 "use client"
-import { digraphs } from '@/app/data/placeholder-data';
 import { KanaSelectContext, KanaSelectContextType } from '../../context/kana-select-context';
-import { AwaitedReactNode, JSXElementConstructor, ReactElement, ReactNode, ReactPortal, useContext } from 'react';
+import { useContext } from 'react';
 
 export default function KanaGrid(props: { title: string; kanaData: any[]; columnNb: number}) {
     const { showOrHide } = useContext(KanaSelectContext) as KanaSelectContextType;
-
     return(
         <>
             <h1 className='text-center text-3xl'>{props.title}</h1>
