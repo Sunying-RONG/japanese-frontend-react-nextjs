@@ -13,15 +13,11 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const syllabary = [
-  { name: 'Monographs (gojūon)', description: '"Fifty sounds" is a traditional system ordering kana characters by their component phonemes, roughly analogous to alphabetical order.', href: '/dashboard', icon: ChartPieIcon },
-  { name: 'あ　Hiragana', description: 'Cursive Japanese syllabary used primarily for native Japanese words', href: '/dashboard/hiragana', icon: CursorArrowRaysIcon },
-  { name: 'ア　Katakana', description: 'Angular Japanese syllabary used primarily for loanwords', href: '/dashboard/katakana', icon: FingerPrintIcon },
-  { name: 'Exercise', description: 'Try to remember syllabary', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Monographs (gojūon)', description: 'か|カ　"Fifty sounds" is a traditional system ordering kana (hiragana and katakana) characters by their component phonemes.', href: '/syllabary' },
+  { name: 'Diacritics (gojūon with dakuten)', description: 'が|ガ　Versions of kana with a dakuten.', href: '/syllabary/diacritics', icon: CursorArrowRaysIcon },
+  { name: 'Digraphs (yōon)', description: 'きゃ|キャ　Yōon is a feature of the Japanese language in which a mora is formed with an added sound.', href: '/syllabary/digraphs' },
+  { name: 'Digraphs with diacritics (yōon with dakuten)', description: 'ぎゃ|ギャ　Versions of yōon with a dakuten.', href: '/syllabary/digraphs-diacritics' },
+  { name: 'Exercise', description: 'Try to recall every character with it\'s pronunciation', href: '#' },
 ]
 
 function classNames(...classes: string[]) {
@@ -73,9 +69,6 @@ export default function NavBar() {
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
-                      {/* <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
-                      </div> */}
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-gray-900">
                           {item.name}
@@ -86,30 +79,18 @@ export default function NavBar() {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                    >
-                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
               </PopoverPanel>
             </Transition>
           </Popover>
 
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
+            Vocabulary
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
+            Grammar
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
+            Training
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -123,10 +104,10 @@ export default function NavBar() {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Sakura icon</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="/sakura-96.png"
                 alt=""
               />
             </a>
@@ -146,14 +127,14 @@ export default function NavBar() {
                   {({ open }) => (
                     <>
                       <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Product
+                        Syllabary
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
                         />
                       </DisclosureButton>
                       <DisclosurePanel className="mt-2 space-y-2">
-                        {[...syllabary, ...callsToAction].map((item) => (
+                        {[...syllabary].map((item) => (
                           <DisclosureButton
                             key={item.name}
                             as="a"
@@ -171,19 +152,19 @@ export default function NavBar() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  Vocabulary
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
+                  Grammar
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Company
+                  Training
                 </a>
               </div>
               <div className="py-6">
