@@ -3,11 +3,12 @@ import { KanaSelectContext, KanaSelectContextType } from '../../context/kana-sel
 import { useContext } from 'react';
 
 export default function KanaGrid(props: { title: string; kanaData: any[]; columnNb: number}) {
+    const gridColCss = `grid-cols-${props.columnNb}`;
     const { showOrHide } = useContext(KanaSelectContext) as KanaSelectContextType;
     return(
         <>
             <h1 className='text-center text-3xl'>{props.title}</h1>
-            <div className={`w-fit grid gap-2 lg:gap-8 grid-cols-${props.columnNb} content-around mx-auto my-10`}>
+            <div className={`w-fit grid gap-2 lg:gap-8 ${gridColCss} content-around mx-auto my-10`}>
                 {props.kanaData.map(item => {
                     if (item.pronounce) {
                         return <div
